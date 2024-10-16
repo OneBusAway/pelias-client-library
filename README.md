@@ -26,7 +26,7 @@ If you're using Gradle and Android Studio, here's what your `build.gradle` shoul
 ~~~
 ...
 repositories {
-    jcenter()
+   maven { url 'https://jitpack.io' }
 }
 
 android {
@@ -44,7 +44,7 @@ android {
 dependencies {
     ...
     // Pelias Client library
-    compile 'edu.usf.cutr:pelias-client-library:1.1.0'
+    implementation 'com.github.OneBusAway:pelias-client-library:v1.1.0'
 }
 ~~~
 
